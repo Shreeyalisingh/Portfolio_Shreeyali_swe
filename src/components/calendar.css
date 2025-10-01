@@ -1,0 +1,72 @@
+.calendar .react-github-calendar rect[data-level],
+.calendar .react-github-calendar .ContributionCalendar-day {
+    fill: #6f42c1 !important;
+    stroke: #6f42c1 !important;
+}
+.calendar {
+    background: #000;
+    color: #fff !important;
+    border-radius: 50px !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 40px 0 0 0;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #fff !important;
+}
+
+.calendar, .calendar * {
+    color: #fff !important;
+}
+
+.calendar .text {
+    color: #eda78e !important;
+}
+
+.github-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(237, 167, 142, 0.08);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.calendar .react-github-calendar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff !important;
+}
+
+.calendar .react-github-calendar svg {
+    width: 100% !important;
+    height: auto;
+    min-width: 700px;
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .calendar {
+        padding: 1.2rem 0.5rem;
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .calendar .react-github-calendar svg {
+        min-width: 350px;
+    }
+}

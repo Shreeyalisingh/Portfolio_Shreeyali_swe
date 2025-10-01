@@ -1,0 +1,73 @@
+/* me.css */
+.me-container{
+    background-color: #e8ebef !important;
+    padding: 20px;
+    border-radius: 50px !important ;
+}
+.text-highlight {
+    color: #9747ff !important;
+}
+.about-box{
+    background-color: #ffffff !important;
+    border-radius: 20px !important;
+    padding: 20px;
+}
+.aa{
+    font-size: 0.7rem;
+    color: gray;
+}
+.about-para {
+    font-size: 1.3rem;
+    color: #817c77 !important;
+}
+.about-btn{
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    width: 100%;
+}
+.about-icon{
+    background-color: #ffffff !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767.98px) {
+    .me-container {
+        padding: 15px;
+        border-radius: 30px !important;
+        margin-top: 1rem !important;
+    }
+    
+    .about-para {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .about-box {
+        margin-bottom: 1rem;
+        padding: 15px;
+    }
+    
+    .about-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .me-container {
+        padding: 18px;
+        border-radius: 40px !important;
+    }
+    
+    .about-para {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large screen - keep original styles */
+@media (min-width: 992px) {
+    .about-btn {
+        width: auto;
+    }
+}

@@ -1,0 +1,186 @@
+.touch-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.touch-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #eda78e;
+}
+
+.touch-description {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.touch-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(111, 66, 193, 0.08);
+  padding: 2rem 1rem 1.5rem 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.touch-item:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(111, 66, 193, 0.18);
+  color: inherit;
+  text-decoration: none;
+}
+
+.touch-icon {
+  font-size: 2.5rem;
+  color: #6f42c1 !important;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(111, 66, 193, 0.1);
+  transition: all 0.3s ease;
+}
+
+.touch-item:hover .touch-icon {
+  background: linear-gradient(135deg, #eda78e, #f4c2a1);
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+.touch-item .touch-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #eda78e;
+}
+
+.touch-item .touch-description {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  word-break: break-word;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Bootstrap responsive utilities enhancement */
+@media (max-width: 1199.98px) {
+  .touch-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .touch-item {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .touch-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 2.2rem;
+  }
+
+  .touch-item .touch-title {
+    font-size: 1.2rem;
+  }
+
+  .touch-item .touch-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .touch-title {
+    font-size: 1.6rem;
+  }
+
+  .touch-description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .touch-item {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .touch-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .touch-item .touch-title {
+    font-size: 1.1rem;
+  }
+
+  .touch-item .touch-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .touch-title {
+    font-size: 1.4rem;
+  }
+
+  .touch-description {
+    font-size: 0.9rem;
+  }
+
+  .touch-item {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .touch-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
+  }
+
+  .touch-item .touch-title {
+    font-size: 1rem;
+  }
+
+  .touch-item .touch-description {
+    font-size: 0.75rem;
+  }
+}
+
+/* Focus styles for accessibility */
+.touch-item:focus {
+  outline: 3px solid #eda78e;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .touch-item,
+  .touch-icon {
+    transition: none;
+  }
+
+  .touch-item:hover {
+    transform: none;
+  }
+
+  .touch-item:hover .touch-icon {
+    transform: scale(1.05);
+  }
+}

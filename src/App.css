@@ -1,0 +1,39 @@
+.nav-link.active {
+  background: #9253ff;
+  color: #fff !important;
+  border-radius: 40px;
+  padding: 0.5rem 2rem;
+  width: 125%;
+  font-weight: 500;
+  box-shadow: 0 2px 8px #9253ff33;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+/* Center navbar list items */
+*{
+  color: #333333 !important;
+  font: poppins !important;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar {
+  max-width: 900px;
+  margin: auto;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+.nav-item{
+  margin-right:3.5rem;
+}
+
+@media (max-width: 767px) {
+  .navbar{
+    display: none;
+  }
+}

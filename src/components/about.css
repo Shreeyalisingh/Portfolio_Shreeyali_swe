@@ -1,0 +1,365 @@
+.about-container {
+  min-height: 50vh;
+  padding: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hello-btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 8px 24px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header-lines {
+  width: 20px;
+  position: absolute;
+}
+
+.main-heading {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.name-highlight {
+  color: #eda78e !important;
+}
+
+.software-text {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-decoration {
+  position: absolute;
+  top: 80%;
+  left: -25px;
+  width: 30px;
+  height: auto;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Quote Section */
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quote-icon {
+  width: 24px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Image Section - Central Focus */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Added for mobile layout */
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.semi-circle-bg {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -40%);
+  width: 380px;
+  height: 200px;
+  background: #eda78e;
+  border-top-left-radius: 340px 200px;
+  border-top-right-radius: 340px 200px;
+  z-index: 1;
+}
+
+.profile-image {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.social-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 3;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+}
+
+.github-btn {
+  background-color: black;
+}
+
+.linkedin-btn {
+  background-color: #0a66c2;
+}
+
+/* Resume and Info Section */
+.resume-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.floating-resume-btn {
+  width: 100px;
+  height: 100px;
+  background: #9253ff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 16px rgba(146, 83, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+/* Mobile Resume Button - Hidden by default */
+.mobile-resume-btn {
+  display: none;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.resume-text {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.current-status {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 30px;
+  }
+
+  .semi-circle-bg {
+    width: 320px;
+    height: 160px;
+  }
+
+  .main-heading {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  }
+}
+
+/* Mobile Responsive (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+    padding-bottom: 0;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+    text-align: center;
+  }
+
+  /* Hide quote on mobile to focus on image */
+  .quote-section {
+    display: none;
+  }
+
+  /* Make image section more prominent on mobile */
+  .image-section {
+    order: 1;
+    margin: 20px 0 0 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Show mobile resume button above image */
+  .mobile-resume-btn {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: #9253ff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 16px rgba(146, 83, 255, 0.3);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: float 2.5s ease-in-out infinite;
+    order: -1; /* Places it before the image */
+  }
+
+  .mobile-resume-btn .resume-text {
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .semi-circle-bg {
+    width: 280px;
+    height: 140px;
+    top: 65%;
+  }
+
+  .profile-image {
+    max-width: 280px;
+  }
+
+  .social-buttons {
+    bottom: 15px;
+    gap: 12px;
+  }
+
+  .social-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .resume-info-section {
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Hide the original resume button on mobile */
+  .resume-info-section .floating-resume-btn {
+    display: none;
+  }
+
+  .current-status {
+    font-size: 0.9rem;
+  }
+
+  .main-heading {
+    margin-bottom: 10px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .header-section {
+    margin-bottom: 10px;
+  }
+  
+  .current-status {
+    display: none;
+  }
+
+  .main-heading {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .image-section {
+    margin: 10px 0 0 0;
+  }
+
+  .semi-circle-bg {
+    width: 240px;
+    height: 120px;
+  }
+
+  .profile-image {
+    max-width: 240px;
+  }
+
+  .resume-info-section {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Hide mobile resume button on very small screens */
+  .mobile-resume-btn {
+    display: none;
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1200px) {
+  .main-content {
+    gap: 60px;
+  }
+
+  .semi-circle-bg {
+    width: 420px;
+    height: 220px;
+  }
+}

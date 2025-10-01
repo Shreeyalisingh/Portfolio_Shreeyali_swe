@@ -1,0 +1,196 @@
+/* Header Styles */
+.hackathon-header-desc {
+  color: #ffffff !important;
+}
+
+.hackathon-title {
+  margin-bottom: 1rem;
+}
+
+/* Cards Container */
+.hackathon-row {
+  width: 100% !important;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Card Wrapper for consistent spacing */
+.hackathon-card-wrapper {
+  height: 100%;
+}
+
+/* Card Styles */
+.hackathon-card-wrapper .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hackathon-card-wrapper .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.hackathon-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Card Body */
+.hackathon-card-wrapper .card-body {
+  padding: 1.5rem;
+  min-height: 150px;
+}
+
+.hackathon-card-wrapper .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.hackathon-card-wrapper .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Header Responsive Design */
+.hackathon-header {
+  margin-bottom: 2rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+  .hackathon-row {
+    padding: 15px;
+  }
+  
+  .hackathon-title {
+    font-size: 2rem;
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+  
+  .hackathon-header-desc {
+    text-align: center !important;
+    margin-bottom: 0;
+  }
+  
+  .hackathon-card-img {
+    height: 180px;
+  }
+  
+  .hackathon-card-wrapper .card-body {
+    min-height: 140px;
+    padding: 1.25rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hackathon-row {
+    padding: 10px;
+  }
+  
+  .hackathon-title {
+    font-size: 1.75rem;
+    text-align: center !important;
+  }
+  
+  .hackathon-header-desc {
+    font-size: 0.9rem;
+    text-align: center !important;
+    padding: 0 10px;
+  }
+  
+  .hackathon-card-img {
+    height: 160px;
+  }
+  
+  .hackathon-card-wrapper .card-body {
+    min-height: 120px;
+    padding: 1rem;
+  }
+  
+  .hackathon-card-wrapper .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .hackathon-card-wrapper .card-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust header layout for mobile */
+  .hackathon-header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 576px) {
+  .hackathon-row {
+    padding: 8px;
+  }
+  
+  .hackathon-title {
+    font-size: 1.5rem;
+  }
+  
+  .hackathon-header-desc {
+    font-size: 0.85rem;
+  }
+  
+  .hackathon-card-img {
+    height: 140px;
+  }
+  
+  .hackathon-card-wrapper .card-body {
+    min-height: 100px;
+    padding: 0.875rem;
+  }
+  
+  .hackathon-card-wrapper .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hackathon-card-wrapper .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Background SVG Responsive Adjustments */
+@media (max-width: 768px) {
+  .projects-bg-svg {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-bg-svg {
+    opacity: 0.2;
+    transform: scale(0.6);
+  }
+}
+
+/* Utility Classes for Better Responsive Design */
+.text-lg-start {
+  text-align: left;
+}
+
+.text-lg-end {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .text-lg-start,
+  .text-lg-end {
+    text-align: center !important;
+  }
+}
